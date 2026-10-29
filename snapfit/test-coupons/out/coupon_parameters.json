@@ -1,0 +1,79 @@
+{
+  "snap": {
+    "t_mm": 1.2,
+    "b_mm": 6.0,
+    "deflection_mm": 1.0,
+    "hook_height_mm": 1.25,
+    "lead_angle_deg": 30.0,
+    "return_angle_deg": 45.0,
+    "root_fillet_mm": 0.6,
+    "formula": "eps = 1.5*y*t/l^2 (Bayer Table 1, design 1, shape A)",
+    "arms": [
+      {
+        "arm": 1,
+        "length_mm": 6.71,
+        "strain_pct": 4.0
+      },
+      {
+        "arm": 2,
+        "length_mm": 7.75,
+        "strain_pct": 3.0
+      },
+      {
+        "arm": 3,
+        "length_mm": 8.49,
+        "strain_pct": 2.5
+      },
+      {
+        "arm": 4,
+        "length_mm": 9.49,
+        "strain_pct": 2.0
+      },
+      {
+        "arm": 5,
+        "length_mm": 10.61,
+        "strain_pct": 1.6
+      },
+      {
+        "arm": 6,
+        "length_mm": 11.77,
+        "strain_pct": 1.3
+      },
+      {
+        "arm": 7,
+        "length_mm": 13.42,
+        "strain_pct": 1.0
+      },
+      {
+        "arm": 8,
+        "length_mm": 15.0,
+        "strain_pct": 0.8
+      }
+    ]
+  },
+  "clearance_per_side_mm": [
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.4,
+    0.5,
+    0.6
+  ],
+  "insert_holes_cad_mm": [
+    3.9,
+    4.0,
+    4.1,
+    4.2,
+    4.3,
+    4.4
+  ],
+  "pilot_holes_cad_mm": [
+    2.5,
+    2.6,
+    2.7,
+    2.8,
+    2.9
+  ]
+}

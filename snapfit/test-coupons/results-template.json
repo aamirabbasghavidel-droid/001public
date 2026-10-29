@@ -1,0 +1,63 @@
+{
+  "source_type": "TEST",
+  "tested_on": "YYYY-MM-DD",
+  "tester": "",
+  "printer": "Elegoo Neptune 4 Plus",
+  "nozzle_mm": 0.4,
+  "material": "PLA",
+  "brand_color": "",
+  "slicer_profile": "",
+  "layer_height_mm": 0.2,
+  "walls": 3,
+  "infill_pct": 100,
+  "enclosure": false,
+  "conditioning_hours": 24,
+
+  "snap_strain": {
+    "measured_t_mm": null,
+    "measured_hook_height_mm": null,
+    "orientation_XY": {
+      "arms": [
+        {"arm": 1, "strain_pct": 4.0, "once": "", "after_10_cycles": ""},
+        {"arm": 2, "strain_pct": 3.0, "once": "", "after_10_cycles": ""},
+        {"arm": 3, "strain_pct": 2.5, "once": "", "after_10_cycles": ""},
+        {"arm": 4, "strain_pct": 2.0, "once": "", "after_10_cycles": ""},
+        {"arm": 5, "strain_pct": 1.6, "once": "", "after_10_cycles": ""},
+        {"arm": 6, "strain_pct": 1.3, "once": "", "after_10_cycles": ""},
+        {"arm": 7, "strain_pct": 1.0, "once": "", "after_10_cycles": ""},
+        {"arm": 8, "strain_pct": 0.8, "once": "", "after_10_cycles": ""}
+      ],
+      "eps_once_pct": null,
+      "eps_repeat_pct": null
+    },
+    "orientation_Z": {
+      "tested": false,
+      "eps_once_pct": null
+    },
+    "codes": "OK | WHITE | SET | CRACK | BREAK"
+  },
+
+  "clearance": {
+    "per_side_mm": [0.10, 0.15, 0.20, 0.25, 0.30, 0.40, 0.50, 0.60],
+    "square_key": ["", "", "", "", "", "", "", ""],
+    "round_pin": ["", "", "", "", "", "", "", ""],
+    "codes": "NO | PRESS | SNUG | FREE | LOOSE"
+  },
+
+  "heat_set_insert_M3": {
+    "insert": "M3x5.7 (OD ~4.6)",
+    "hole_cad_mm": [3.9, 4.0, 4.1, 4.2, 4.3, 4.4],
+    "result": ["", "", "", "", "", ""],
+    "best_hole_cad_mm": null,
+    "iron_temp_c": null
+  },
+
+  "self_tap_M3": {
+    "pilot_cad_mm": [2.5, 2.6, 2.7, 2.8, 2.9],
+    "result": ["", "", "", "", ""],
+    "codes": "HARD | GOOD | STRIP",
+    "best_pilot_cad_mm": null
+  },
+
+  "notes": ""
+}
