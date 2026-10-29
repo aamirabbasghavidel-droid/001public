@@ -191,6 +191,39 @@ PLA چاپی: در جدول نیست → از ABS استفاده کن یا ان�
 | 16 | Enclosure جعبه‌ای: لبه = نصف ضخامت دیواره، لقی 0.2 mm، درب 1 mm بیرون‌زده، کلیپ‌ها قرینه روی دو ضلع بلند | HyperMakx (Fusion) | الگوی اولیه‌ی Lip/Groove (لقی از تست) |
 | 17 | Enclosure دور مکانیزم متحرک: Assembly را Save as Part (چندبدنه)، بدنه‌های متحرک را در کل محدوده‌ی حرکت Pattern کن، دور آن اسکچ بزن | GoEngineer @00:00–02:56 | **ایده برای افزونه:** چک لقی با پوش حرکت مکانیزم |
 
+#### Slant 3D و منابع مکتوبِ مبتنی بر ویدیوهایش [سطح D]
+
+زیرنویس ویدیوهای Slant 3D از سرور ابری قابل دریافت نبود (bot check). منابع زیر **خلاصه‌ی مکتوب** یا راهنمای مبتنی بر همان ویدیوها هستند:
+
+| # | نکته | منبع | ارتباط |
+|---|---|---|---|
+| 18 | لقی به رنگ، جنس، نوع/جهت infill، رزولوشن لایه، نازل و پرینتر بستگی دارد → **راه‌حل در طراحی است، نه تنظیمات** | Slant 3D، [Perfect Tolerance](https://www.youtube.com/watch?v=XKrDUnZCmQQ) (via [یادداشت از زیرنویس](https://weavingwords.pages.dev/notes/2026-05-21_how-to-design-a-print-with-perfect-tolerance-every-time/)) | تأیید #13 |
+| 19 | لبه‌های بیرونی گرد (گوشه‌ی تیز = تغییر جهت ناگهانی نازل = خطای ابعادی؛ دیواره‌ی صاف دقیق‌ترین سطح است)؛ پخ پایین؛ گوشه‌ی داخلی حفره گرد | همان | Generator |
+| 20 | لبه‌ی جلوی درب زاویه‌دار (گُوه) تا همیشه بتواند وارد شود | همان | با #8 |
+| 21 | دیواره‌ی نازک (فقط perimeter) به‌جای infill توپر در سطح‌های جفت‌شونده — ابعاد قابل پیش‌بینی‌تر | همان | Generator / توصیه‌ی اسلایس |
+| 22 | فقط **چهار گوشه** یا فقط **دیواره‌های صاف** تماس داشته باشند؛ در جای گیر، گوشه‌ها را خالی کن | همان | Lip/Groove Generator |
+| 23 | **Compliant features:** فاصله‌ی زیر بخش انعطاف‌پذیر **حداقل 0.3 mm، حداکثر ~0.5 mm** (کمتر: اسلایسر آن را می‌بندد؛ بیشتر: هندسه تغییر شکل می‌دهد) | همان | قانون عددی Generator (سطح D، با نمونه‌ی تست) |
+| 24 | فنر U شکل («thumb») که به دیواره فشار می‌آورد + جاانداز مربعی پایین | همان | الگوی درب compliant |
+| 25 | شکاف در گوشه‌های جای گیر برای کمی باز شدن — **موازی لایه‌هاست، خطر جدا شدن لایه**؛ فقط به‌عنوان حاشیه‌ی اطمینان کوچک | همان | هشدار جهت لایه |
+| 26 | **Grip fins:** آرایه‌ای از انگشتی‌های انعطاف‌پذیر روی دیواره‌ی داخلی؛ تغییر شکل کم در هر فین → خزش کم؛ نیروی جا زدن/درآوردن مستقل از پرینتر و تنظیمات — «قابل‌اعتمادترین» | همان | روش جدید برای Advisor |
+| 27 | لقی بین فین‌های snap و سوراخ: **0.4 mm** تعادل خوب بین راحتی جا زدن و سفتی | [OpenAT Design Guide](https://makersmakingchange.github.io/OpenAT_Design_Guide/Design_Elements_For_3D_Printed_Parts/Snap_Fits.html) (CC BY-SA، مبتنی بر Slant 3D [Joining Features](https://www.youtube.com/watch?v=RTQjvYENR7w)) | مقدار اولیه، با نمونه‌ی تست |
+| 28 | تب‌ها نباید هم‌صفحه با لایه‌ها خم شوند؛ overhang تب ≥ 45° از افق؛ تب را به بستر نرسان (لایه‌ی اول پیچیده) | همان | تأیید #1 و قانون overhang |
+| 29 | قلاب «خاری» (barb) = دائمی؛ زاویه در هر دو طرف = قابل جدا شدن | همان | با زاویه‌ی برگشت §2 |
+| 30 | کرنش طراحی ≈ **10–15% ازدیاد طول در شکست** (PLA ~8%، ABS ~10%، PETG ~24%، نایلون ~100%) | Engineers Grow / Ultimate Tool Changer via [Hackaday](https://hackaday.com/2022/11/11/oh-snap-3d-printing-snapping-parts-without-breakage/) | برای PLA → 0.8–1.2% — **محافظه‌کارانه‌تر** از روش §4؛ فقط برای مقایسه |
+| 31 | PLA زیر بار دائم (مثلاً کلیپ زیر آب) ظرف یک روز تغییر شکل دائمی داد | نظر کاربر در همان صفحه‌ی Hackaday | تأیید قانون #11 (بدون پیش‌بار) و هشدار خزش |
+| 32 | snapهای دوطرفه‌ی معمولی تنش را روی مرز لایه متمرکز می‌کنند → **snap چهارطرفه** | Slant 3D «Avoid Vertical Breaks with 4 Way Snaps» (فقط عنوان، از نتایج جستجو) | باید دیده شود |
+
+**فهرست تکنیک‌های اتصال Slant 3D** (از فصل‌بندی ویدیوها — محتوا خوانده نشد): پین الماسی، slab & slot کم‌ارتفاع، snap با S-bracket و C-clamp، tongue & slot ساده / T / I با grip fins، تب قفل دوطرفه، شیار چسب، پین افقی و عمودی، پین/شیار صلیبی، fins برای حذف overhang، fins انعطاف‌پذیر برای لقی، micro-features برای پین عمودی محکم. — [Ultimate Guide to Connecting 3D Printed Parts](https://www.youtube.com/@slant3d) و [Joining Features](https://www.youtube.com/watch?v=RTQjvYENR7w)
+
+**ویدیوهایی که کاربر فرستاد و هنوز خوانده نشده‌اند** (عنوان از oEmbed یوتوب):
+- [6 Ways To Make Snap Fits for 3D Printing](https://youtube.com/watch?v=rsfZgT3ZEI8) — Slant 3D
+- [Design Compliant Lids for Perfect Tolerance Every Time (Lids Vol. 2)](https://youtube.com/watch?v=IZKh6lo9SP4) — Slant 3D
+- [Snap Fit Tinkercad Sketch Tool Dove Tail](https://youtube.com/watch?v=eF9v8q6XakA) — HL ModTech
+- [Design Snap Fits for Mass Production 3D Printing](https://youtube.com/watch?v=6DkCCOc5O1Y) — Slant 3D
+- کانال: [@slant3d](https://youtube.com/@slant3d)
+
+→ روی کامپیوتر کاربر: `yt-dlp --skip-download --write-auto-subs --sub-langs en <URL>` (از اینترنت خانگی معمولاً bot check نمی‌خورد).
+
 **ترفندهای طراحی برای FDM** (مرتبط با Generatorها):
 - [SECRET Revealed to Design SNAP FIT JOINTS with 3D Printing](https://www.youtube.com/watch?v=wl6TDwBqkgs) — جلوگیری از شکستن هوک
 - [SNAPS that CLICK in and NEVER BREAK with 3D Printing!](https://youtube.com/watch?v=-jgbd8RUhhY) — وقتی هوک می‌شکند چه کنیم
