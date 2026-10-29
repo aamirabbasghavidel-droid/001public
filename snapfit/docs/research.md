@@ -165,6 +165,41 @@ PLA چاپی: در جدول نیست → از ABS استفاده کن یا ان�
 - SolidWorks API: [xCAD.NET](https://github.com/xarial/xcad)، [codestack](https://github.com/xarial/codestack)، [SolidDNA](https://github.com/CAD-Booster/SolidDNA)، [آینه‌ی راهنمای API](https://github.com/kilwizac/solidworks-api-mcp)
 - Fusion 360: [Fusion360SnapFitGenerator](https://github.com/dwragon/Fusion360SnapFitGenerator)
 
+### ویدیوهای یوتوب (منبع تجربی — سطح D، برای ایده‌ی طراحی، نه عدد)
+
+> محتوای ویدیوها دیده نشد (youtube.com از محیط تحقیق قابل دسترسی نبود)؛ فقط عنوان و توضیح از نتایج جستجو. Claude Code روی کامپیوتر کاربر می‌تواند زیرنویس‌ها را بخواند (مثلاً با `yt-dlp --write-auto-subs --skip-download`) و نکات را استخراج کند.
+
+**ترفندهای طراحی برای FDM** (مرتبط با Generatorها):
+- [SECRET Revealed to Design SNAP FIT JOINTS with 3D Printing](https://www.youtube.com/watch?v=wl6TDwBqkgs) — جلوگیری از شکستن هوک
+- [SNAPS that CLICK in and NEVER BREAK with 3D Printing!](https://youtube.com/watch?v=-jgbd8RUhhY) — وقتی هوک می‌شکند چه کنیم
+- [How to Design a Print with Perfect Tolerance EVERY Time](https://m.youtube.com/watch?v=XKrDUnZCmQQ) — press fit، snap fit، گوشه‌ی گرد، پخ، compliant features، grip fins (Geometry Media / Slant 3D)
+- [Design Snap Fits for Mass Production 3D Printing](https://www.youtube.com/watch?v=6DkCCOc5O1Y)
+- [Designing Snap Closures For 3D Printed Parts](https://www.youtube.com/watch?v=m_-d8xcSDQs)
+- [How to Design a Stronger Snap-Fit Pin for 3D Printing](https://www.youtube.com/watch?v=wXB3VfBBcdU) — پین snap برای اتصال چرخشی
+- [3D Printing Snap Fits for Beginners](https://www.youtube.com/watch?v=wv6idwuD7k8)
+- [How to Design Snap Fits, Interlocking Features, and More for SLS](https://www.youtube.com/watch?v=uECIGfCyPSI)
+- [Maker's Muse Tolerance Test](https://www.youtube.com/watch?v=TYuLVN3YHw8) — ایده‌ی نمونه‌ی تست لقی
+
+**SolidWorks** (برای توسعه‌دهنده، دیدن روش دستی که افزونه باید خودکار کند):
+- [Fastening Features — Mounting Boss, Vent, Snap Hook, Lip/Groove](https://www.youtube.com/watch?v=S-YHxPdqeP0)
+- [How to Create a Snap Hook in SolidWorks](https://youtube.com/watch?v=X94TKUNi0oE)
+- [SNAP BOX SERIES (lid)](https://www.youtube.com/watch?v=KulqI6Evi1I)
+- [Snap-fit fan guard in SOLIDWORKS](https://www.youtube.com/watch?v=2OU0arYbTMQ)
+- [Enclosure Design Around Moving Parts](https://www.youtube.com/watch?v=CuzPIiyWUj8) — مرتبط با Enclosure مکانیزم
+- [Twist-Snap Design Tutorial](https://www.youtube.com/watch?v=75uswjVayrs) — snap پیچشی
+
+**Fusion 360** (ایده‌ی گردش کار Enclosure):
+- [Snap 3D prints together with cantilever joint](https://www.youtube.com/watch?v=mrOPCyK12k0) — به راهنمای snap joint MIT ارجاع می‌دهد
+- [Design Snap-Fit Enclosures with Ease](https://www.youtube.com/watch?v=nhoU-SZvKKA)
+- [Snap Fit Joint — Raspberry Pi case](https://www.youtube.com/watch?v=dahn-9FePeM)
+- [Playlist: Design 3D Printed Snap Fit Joints](https://www.youtube.com/playlist?list=PLrZ2zKOtC_-B40OCy15MRRXtsBTjgVR44)
+
+**مقدماتی:** [Plastic Parts Design: What Is Snap Fit?](https://www.youtube.com/watch?v=GYVBIZJ2AMI) — انواع، مزایا/معایب، best practices.
+
+نکته‌ای که از نتایج جستجو (نقل از Bayer) تأیید شد: زاویه‌ی برگشت 0–60° قابل جدا شدن، 60–90° عملاً غیرقابل جدا شدن (مگر با دکمه/زبانه‌ی آزادکننده یا شکاف ابزار)؛ زاویه‌ی ورود معمولاً 15–30° و بیش از ~45° نه. [V-SEC]
+
+⚠️ یک متن پتنت فرمول `f = ε·L²/(3h)` را نقل کرده که با استخراج ما (`0.67·ε·L²/h = 2εL²/(3h)`) نمی‌خواند — احتمالاً خطای استخراج یا تعریف متفاوت؛ **استفاده نشود**.
+
 ## ۸. قبل از انتشار باید با منبع اصلی چک شود
 
 1. Bayer Table 1 (ضریب 0.86 و بقیه‌ی مقاطع)
