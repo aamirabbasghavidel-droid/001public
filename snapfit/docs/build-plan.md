@@ -133,7 +133,7 @@ snapfit/
 ## ترتیب ساخت
 
 1. **چک منابع:** PDF رسمی Covestro (لینک در research.md) را دانلود کن؛ موارد بخش ۸ research.md را چک کن و `verification` را به‌روز کن. هر چیزی که چک نشد `UNVERIFIED` بماند.
-2. **JointAdvisor.Rules** + تست‌ها: ماشین‌حساب Cantilever را با **مثال حل‌شده‌ی Bayer** (PC/ABS، ε=2.5%) تست کن تا عدد به عدد یکی شود.
+2. **JointAdvisor.Rules** + تست‌ها: ماشین‌حساب Cantilever را با **مثال حل‌شده‌ی Bayer** تست کن تا عدد به عدد یکی شود (research.md §2): Makrolon PC، l=19، b=9.5، y=2.4، α=30°، ε=2%، E_s=1815، μ=0.6 → h=3.28 mm، P=32.5 N، W≈58.5 N. همه‌ی ۱۲ فرمول جدول ۱ (research.md §2) پیاده و تست شوند. منابع وب: `sources-web.md`.
 3. فیلترها + امتیازدهی + گزارش محاسبات (HTML) — قابل اجرا بدون SolidWorks.
 4. Add-in خالی با xCAD: دکمه در CommandManager، ثبت با regasm، دیده شدن در SolidWorks.
 5. تحلیل Part چندبدنه: لیست Bodyها، سطح‌های تماس، لبه، ضخامت، جهت باز شدن — نمایش در Task Pane.
